@@ -109,7 +109,6 @@ jobs:
             -exec cp {} "output/antiGem-standard-v${VERSION_NAME}-release.apk" \;
           cp app/build/intermediates/agyIdeBridge/agy_ide_bridge \
             "output/agy_ide_bridge-v${VERSION_NAME}-android-arm64"
-          cp app/release.jks output/release.jks
           echo "--- artifacts ---"
           ls -lh output/
 
@@ -119,4 +118,3 @@ jobs:
           name: antiGem-standard-release
           path: output/*
           if-no-files-found: error
-          
